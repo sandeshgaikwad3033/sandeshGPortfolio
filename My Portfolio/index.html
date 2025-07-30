@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-controls">
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <div class="menu-overlay"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-image">
+                <img src="sonu.jpg" alt="Your Name">
+            </div>
+            <h1>Sandesh Gaikwad</h1>
+            <h2>Full Stack Developer</h2>
+            <p>I create beautiful and functional websites</p>
+            <a href="#contact" class="cta-button">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="sandesh1.jpg" alt="Your Name">
+                <img src="sandesh3.jpg" alt="Your Name">
+            </div>
+            <div class="about-text">
+                <p>Hello! I'm a passionate Full Stack Developer with experience in creating responsive and user-friendly
+                    websites. I love turning complex problems into simple, beautiful solutions.</p>
+                <div class="education">
+                    <h3>Education</h3>
+                    Bachelor of Computer Application<br>
+                    University of Pune<br>
+                    2022 – 2025<br><br>
+
+                    Higher Secondary Certificate (HSC)<br>
+                    State Board, Maharashtra<br>
+                    2019 – 2020<br><br>
+
+                    Secondary School Certificate (SSC)<br>
+                    State Board, Maharashtra<br>
+                    2017 – 2018
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="project-grid">
+            <!-- Project Card 1 -->
+            <div class="project-card">
+                <img src="cakeshop.png" alt="Project 1">
+                <h3>CakeShop System</h3>
+                <p>A modern, responsive CakeShop System built with React js and Java Spring Boot. Features smooth
+                    animations, and mobile-friendly design.</p>
+                <div class="project-links">
+                    <a href="https://github.com/sandeshgaikwad3033/CakeShop" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <!-- Project Card 2 -->
+            <div class="project-card">
+                <img src="schoolbus.png" alt="Project 2">
+                <h3>School Bus System</h3>
+                <p>A full-featured School Bus System with user authentication, Students management, and child safety.</p>
+                <div class="project-links">
+                    <a href="https://github.com/sandeshgaikwad3033/SchoolBusSystem" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <!-- Project Card 3 -->
+            <div class="project-card">
+                <img src="cloth_record_store.png" alt="Project 3">
+                <h3>Cloth Record Store System</h3>
+                <p>A cloth Record System with real-time updates, task assignment, and manage inventory 
+                    features.</p>
+                <div class="project-links">
+                    <a href="https://github.com/sandeshgaikwad3033/clothstoreManagement" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS3</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-php"></i>
+                <h3>PHP</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-java"></i>
+                <h3>Java</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-leaf"></i> <!-- no official icon, leaf used as symbolic for Spring -->
+                <h3>Spring Boot</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-react"></i>
+                <h3>React</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-database"></i> <!-- Hibernate has no official FA icon -->
+                <h3>Hibernate</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-database"></i>
+                <h3>MySQL</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-content">
+            <form id="contact-form" action="making-process.html" >
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+                </div>
+            <a href="making-process.html"><button type="submit" class="submit-btn">Send Message</button></a> 
+            </form>
+            <div class="social-links">
+                <a href="https://in.linkedin.com/in/sandesh-gaikwad-249371338" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/sandeshgaikwad3033" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Sandesh Gaikwad. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
